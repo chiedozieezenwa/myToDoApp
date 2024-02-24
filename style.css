@@ -38,7 +38,7 @@ ul {
   padding: 0;
 }
 li {
-  padding: 10px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
@@ -58,4 +58,28 @@ li:last-child {
 }
 .delete-btn:hover {
   background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  input[type="text"] {
+    width: 60%;
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    width: 70%;
+  }
+  input[type="text"] {
+    width: 90%;
+  }
+
+  .container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
